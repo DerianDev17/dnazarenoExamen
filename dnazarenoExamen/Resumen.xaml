@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dnazarenoExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" FontSize="14" TextColor="red" HorizontalTextAlignment="End" />
+            <Label Text="Resumen" FontSize="24" HorizontalTextAlignment="Center" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="24" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" FontSize="24" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Edad" FontSize="24" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Fecha" FontSize="24" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Pais" FontSize="24" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Cuidad" FontSize="24" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Monto Inicial" FontSize="24" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Pago Mensual" FontSize="24" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Pago Total" FontSize="24" Grid.Row="8" Grid.Column="0"/>
+
+
+
+                <Entry x:Name="txtNombre" Placeholder="Nombre del Estudiante" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido del Estudiante" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad del Estudiante" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtFecha" Placeholder="fecha" Grid.Row="3" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPais" Placeholder="Pais del Estudiante" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtCuidad" Placeholder="Ciudad del Estudiante" Grid.Row="5" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtMonto" Placeholder="Pago Inicial" Grid.Row="6" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPago" Placeholder="Pago Mensual" Grid.Row="7" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtPagoTotal" Placeholder="Pago Total" Grid.Row="8" Grid.Column="1" IsReadOnly="True"/>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
